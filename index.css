@@ -4,12 +4,18 @@ table,th,td
 }
 
 .bg-container{
-    border-radius: 24px;
+    padding-top:40px;
+    padding-bottom:20px;
+    border-radius: 30px;
     background-image: linear-gradient(to top, #061535, #8bc8e6);
 }
 
 .bg-container-a{
-    border-radius: 48px;
+    border-radius: 50px;
+    padding-top:40px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
     /*background-image: linear-gradient(to bottom, #a4d4e8, #7cd3ee);*/
 }
 
