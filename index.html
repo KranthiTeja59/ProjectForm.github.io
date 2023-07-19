@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="Wadlabform.css"/>
+   <title>Registration Form Project</title>
+</head>
+
+
+<body bgcolor="silver">
+    <center>
+    <div class="bg-container" style="height:900px;width:1400px;">
+    <h1 class="bg-heading" align="center">ENROLLMENT FORM</h1>
+
+        <center>
+            <div class="bg-container-a" style="height:800px;width:640px;background-color:rgb(211, 251, 255)">
+            <form id="myForm" onsubmit="return validateForm()" method="post" autocomplete="off">
+                <table align="center">
+
+                    <tr>
+                        <td><th><label for="fname">First Name:</label></th></td>
+                        <td><input type="text" id="fname" name="Fname" value="" required autofocus placeholder="Enter first name"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="lname" >Last Name:</label></th></td>
+                        <td><input type="text" id="lname" name="Lname" value=""  autofocus placeholder="Enter last name"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="dob">Date of birth:</label></th></td>
+                        <td><input type="date" id="dob" name="Dob" value="" required autofocus> </td>
+                    </tr>
+
+
+                    <tr>
+                       <td> <th><label for="Gender:">Gender:</label></th></td>
+                       <td>
+                            <input type="radio" id="male" name="Gender" >
+                            <label for="male" >Male</label>
+                            <input type="radio" id="female" name="Gender" >
+                            <label for="female" >Female</label>
+                            <input type="radio" id="other" name="Gender" >
+                            <label for="other" >Others</label>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <th><label for="Rollno">Roll No:</label></th></td>
+                        <td><input type="number" id="Rollno" name="Rollno" value="" required autofocus read only  placeholder="Enter roll no"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="email" >Email Id:</label></th></td>
+                        <td><input type="email" id="email" name="email" value=""  autofocus required placeholder="Enter Email Id"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <th><label for="Course">Course:</label></th></td>
+                        <td>
+                            <select>
+                                <option value="Select">Select</option>
+                                <option value="B.Tech">B.Tech</option>
+                                <option value="B.Sc">B.Sc</option>
+                                <option value="M.Tech">M.Tech</option>
+                                <option value="MBA">MBA</option>
+                                <option value="P.hd">P.hd</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="choosedate">Choose date:</label></th></td>
+                        <td><input type="date" id="choosedate" name="dob" value="" required autofocus>  <button type="button" onclick="document.getElementById('show date').innerHTML=Date()"><strong>Date and Time</strong></button><p id="show date"></p></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="BL"> Back Logs:</label></th></td>
+                        <td><input type="number" id="BL" name="backlogs" min="0" max="25" step="1" value="" required autofocus> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="color.">Kit Color:</label></th></td>
+                        <td><input type="color" id="color" name="fav color" value="" required autofocus disabled>          <input type="submit" value="Apply" onclick="alert('Color Submitted')" disabled> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label>Experience:</label></th></td>
+                        <td>
+                            <input type="checkbox" id="certified" name="Gender" >
+                            <label for="certificate" >Certified</label><br>
+                            <input type="checkbox" id="project" name="Gender" >
+                            <label for="project" >Project</label><br>
+                            <input type="checkbox" id="intern" name="Gender" >
+                            <label for="intern" >Internship</label><br>
+                            <input type="checkbox" id="coder" name="Gender" >
+                            <label for="coder" >Programming</label>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="pwd">Password:</label></th></td>
+                        <td><input type="password" id="pwd" name="Pwd" value="" required autofocus placeholder="Enter Password"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="my file">Upload Resume:</label></th></td>
+                        <td><input type="file" id="my file" name="Choose File"autofocus> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="phnu">Contact Number:</label></th></td>
+                        <td><input type="tel" id="phnu" name="phno" value="" required autofocus placeholder="Enter contact no"> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><label for="add" >Home Address:</label></th></td>
+                        <td><textarea id="add" name="address" value=""  autofocus required placeholder="Enter home address" rows="3" cols="10" placeholder="Enter address" style="width:164px;height:70px;"></textarea></td>
+                    </tr>
+
+
+                    <tr> 
+                        <td><th><label for="shifts" >Working Shift:</label></th></td>
+                        <td>
+                            <input type="radio" id="mrng" name="shifts" onclick="document.getElementById('sftimg').src='Wadlabbasicp4.jpg' ">
+                            <label for="mrng" >Day Hours</label> 
+                            <input type="radio" id="nyt" name="shifts" onclick="document.getElementById('sftimg').src='Wadlabbasicp5.jpg' ">
+                            <label for="nyt">Night Hours</label> </td><br>
+                        <td><img id="sftimg"  src="Wadlabbasicp4.jpg" style="width:40px;height:30px;"></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <td><fieldset>
+                                    <legend>Interests:</legend>
+                                        <label for="spo">Sports:</label><br>
+                                        <input type="text" id="spo" value=""><br>
+                                        <label for="sk">Hobbies:</label><br>
+                                        <input type="text" id="sk" value=""><br>
+                            </td>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><th><input type="reset" value="Reset"></th></td>
+                        <td><th></th></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <th><input type="image" src="Wadlabbasicp3.jpg" value="Submit" alt="Submit" onclick="validateForm()" width="48" height="24"></th>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+        </center>
+        </div>
+    <script src="Wadlabform.js"></script>
+    </center>
+</body>
+</html>
+
