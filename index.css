@@ -4,17 +4,18 @@ table,th,td
 }
 
 .bg-container{
-    padding-top:40px;
+    padding-top:30px;
     padding-bottom:20px;
-    border-radius: 30px;
+    
+    border-radius: 40px;
     background-image: linear-gradient(to top, #061535, #8bc8e6);
 }
 
 .bg-container-a{
-    border-radius: 40px;
+    border-radius: 50px;
     padding-top:30px;
-    padding-left:8px;
-    padding-right:8px;
+    padding-left:10px;
+    padding-right:10px;
     padding-bottom:5px;
     /*background-image: linear-gradient(to bottom, #a4d4e8, #7cd3ee);*/
     margin-top:50px;
